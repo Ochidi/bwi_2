@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/build/devel/setup.sh
