@@ -384,6 +384,19 @@ tests/fast:
 .PHONY : tests/fast
 
 #=============================================================================
+# Target rules for targets named wifi_test
+
+# Build rule for target.
+wifi_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 wifi_test
+.PHONY : wifi_test
+
+# fast build rule for target.
+wifi_test/fast:
+	$(MAKE) -f CMakeFiles/wifi_test.dir/build.make CMakeFiles/wifi_test.dir/build
+.PHONY : wifi_test/fast
+
+#=============================================================================
 # Target rules for targets named gtest
 
 # Build rule for target.
@@ -433,6 +446,30 @@ src/reader.cpp.s:
 	$(MAKE) -f CMakeFiles/reader.dir/build.make CMakeFiles/reader.dir/src/reader.cpp.s
 .PHONY : src/reader.cpp.s
 
+src/wifi_test.o: src/wifi_test.cpp.o
+.PHONY : src/wifi_test.o
+
+# target to build an object file
+src/wifi_test.cpp.o:
+	$(MAKE) -f CMakeFiles/wifi_test.dir/build.make CMakeFiles/wifi_test.dir/src/wifi_test.cpp.o
+.PHONY : src/wifi_test.cpp.o
+
+src/wifi_test.i: src/wifi_test.cpp.i
+.PHONY : src/wifi_test.i
+
+# target to preprocess a source file
+src/wifi_test.cpp.i:
+	$(MAKE) -f CMakeFiles/wifi_test.dir/build.make CMakeFiles/wifi_test.dir/src/wifi_test.cpp.i
+.PHONY : src/wifi_test.cpp.i
+
+src/wifi_test.s: src/wifi_test.cpp.s
+.PHONY : src/wifi_test.s
+
+# target to generate assembly for a file
+src/wifi_test.cpp.s:
+	$(MAKE) -f CMakeFiles/wifi_test.dir/build.make CMakeFiles/wifi_test.dir/src/wifi_test.cpp.s
+.PHONY : src/wifi_test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -464,11 +501,15 @@ help:
 	@echo "... test-results"
 	@echo "... test-results-run"
 	@echo "... tests"
+	@echo "... wifi_test"
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... src/reader.o"
 	@echo "... src/reader.i"
 	@echo "... src/reader.s"
+	@echo "... src/wifi_test.o"
+	@echo "... src/wifi_test.i"
+	@echo "... src/wifi_test.s"
 .PHONY : help
 
 

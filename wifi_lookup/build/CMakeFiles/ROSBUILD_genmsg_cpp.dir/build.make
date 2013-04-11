@@ -67,6 +67,10 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/wifi_lookup/Wifi.h
 ../msg_gen/cpp/include/wifi_lookup/WifiData.h: /opt/ros/groovy/share/rosconsole/package.xml
 ../msg_gen/cpp/include/wifi_lookup/WifiData.h: /opt/ros/groovy/share/xmlrpcpp/package.xml
 ../msg_gen/cpp/include/wifi_lookup/WifiData.h: /opt/ros/groovy/share/roscpp/package.xml
+../msg_gen/cpp/include/wifi_lookup/WifiData.h: /opt/ros/groovy/share/opencv2/package.xml
+../msg_gen/cpp/include/wifi_lookup/WifiData.h: /opt/ros/groovy/share/geometry_msgs/package.xml
+../msg_gen/cpp/include/wifi_lookup/WifiData.h: /opt/ros/groovy/share/sensor_msgs/package.xml
+../msg_gen/cpp/include/wifi_lookup/WifiData.h: /opt/ros/groovy/share/cv_bridge/package.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/wifi_lookup/WifiData.h"
 	/opt/ros/groovy/share/roscpp/rosbuild/scripts/genmsg_cpp.py /nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/msg/WifiData.msg
@@ -92,6 +96,10 @@ CMakeFiles/ROSBUILD_genmsg_cpp: ../msg_gen/cpp/include/wifi_lookup/Wifi.h
 ../msg_gen/cpp/include/wifi_lookup/Wifi.h: /opt/ros/groovy/share/rosconsole/package.xml
 ../msg_gen/cpp/include/wifi_lookup/Wifi.h: /opt/ros/groovy/share/xmlrpcpp/package.xml
 ../msg_gen/cpp/include/wifi_lookup/Wifi.h: /opt/ros/groovy/share/roscpp/package.xml
+../msg_gen/cpp/include/wifi_lookup/Wifi.h: /opt/ros/groovy/share/opencv2/package.xml
+../msg_gen/cpp/include/wifi_lookup/Wifi.h: /opt/ros/groovy/share/geometry_msgs/package.xml
+../msg_gen/cpp/include/wifi_lookup/Wifi.h: /opt/ros/groovy/share/sensor_msgs/package.xml
+../msg_gen/cpp/include/wifi_lookup/Wifi.h: /opt/ros/groovy/share/cv_bridge/package.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../msg_gen/cpp/include/wifi_lookup/Wifi.h"
 	/opt/ros/groovy/share/roscpp/rosbuild/scripts/genmsg_cpp.py /nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/msg/Wifi.msg

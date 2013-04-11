@@ -72,6 +72,10 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/wifi_lookup/msg/__init__.py
 ../src/wifi_lookup/msg/_WifiData.py: /opt/ros/groovy/share/rosconsole/package.xml
 ../src/wifi_lookup/msg/_WifiData.py: /opt/ros/groovy/share/xmlrpcpp/package.xml
 ../src/wifi_lookup/msg/_WifiData.py: /opt/ros/groovy/share/roscpp/package.xml
+../src/wifi_lookup/msg/_WifiData.py: /opt/ros/groovy/share/opencv2/package.xml
+../src/wifi_lookup/msg/_WifiData.py: /opt/ros/groovy/share/geometry_msgs/package.xml
+../src/wifi_lookup/msg/_WifiData.py: /opt/ros/groovy/share/sensor_msgs/package.xml
+../src/wifi_lookup/msg/_WifiData.py: /opt/ros/groovy/share/cv_bridge/package.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/wifi_lookup/msg/_WifiData.py"
 	/opt/ros/groovy/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/msg/WifiData.msg
@@ -97,6 +101,10 @@ CMakeFiles/ROSBUILD_genmsg_py: ../src/wifi_lookup/msg/__init__.py
 ../src/wifi_lookup/msg/_Wifi.py: /opt/ros/groovy/share/rosconsole/package.xml
 ../src/wifi_lookup/msg/_Wifi.py: /opt/ros/groovy/share/xmlrpcpp/package.xml
 ../src/wifi_lookup/msg/_Wifi.py: /opt/ros/groovy/share/roscpp/package.xml
+../src/wifi_lookup/msg/_Wifi.py: /opt/ros/groovy/share/opencv2/package.xml
+../src/wifi_lookup/msg/_Wifi.py: /opt/ros/groovy/share/geometry_msgs/package.xml
+../src/wifi_lookup/msg/_Wifi.py: /opt/ros/groovy/share/sensor_msgs/package.xml
+../src/wifi_lookup/msg/_Wifi.py: /opt/ros/groovy/share/cv_bridge/package.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ../src/wifi_lookup/msg/_Wifi.py"
 	/opt/ros/groovy/share/rospy/rosbuild/scripts/genmsg_py.py --noinitpy /nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/msg/Wifi.msg

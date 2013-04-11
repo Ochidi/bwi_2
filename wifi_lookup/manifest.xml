@@ -10,4 +10,6 @@
   <url>http://github.com/BobertForever/bwi</url>
   <depend package="rospy"/>  
   <depend package="roscpp"/>
+  <depend package="opencv2"/>
+  <depend package="cv_bridge"/>
 </package>

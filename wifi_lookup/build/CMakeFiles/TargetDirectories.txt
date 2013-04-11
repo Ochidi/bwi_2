@@ -19,3 +19,4 @@
 /nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/build/CMakeFiles/test-results.dir
 /nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/build/CMakeFiles/test-results-run.dir
 /nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/build/CMakeFiles/tests.dir
+/nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/build/CMakeFiles/wifi_test.dir

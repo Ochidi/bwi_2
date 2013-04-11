@@ -66,6 +66,10 @@ CMakeFiles/reader.dir/src/reader.cpp.o: /opt/ros/groovy/share/rospy/package.xml
 CMakeFiles/reader.dir/src/reader.cpp.o: /opt/ros/groovy/share/rosconsole/package.xml
 CMakeFiles/reader.dir/src/reader.cpp.o: /opt/ros/groovy/share/xmlrpcpp/package.xml
 CMakeFiles/reader.dir/src/reader.cpp.o: /opt/ros/groovy/share/roscpp/package.xml
+CMakeFiles/reader.dir/src/reader.cpp.o: /opt/ros/groovy/share/opencv2/package.xml
+CMakeFiles/reader.dir/src/reader.cpp.o: /opt/ros/groovy/share/geometry_msgs/package.xml
+CMakeFiles/reader.dir/src/reader.cpp.o: /opt/ros/groovy/share/sensor_msgs/package.xml
+CMakeFiles/reader.dir/src/reader.cpp.o: /opt/ros/groovy/share/cv_bridge/package.xml
 	$(CMAKE_COMMAND) -E cmake_progress_report /nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/reader.dir/src/reader.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -W -Wall -Wno-unused-parameter -fno-strict-aliasing -pthread -o CMakeFiles/reader.dir/src/reader.cpp.o -c /nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/src/reader.cpp
