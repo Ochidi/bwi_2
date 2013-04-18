@@ -7,6 +7,11 @@ CMakeFiles/wifi_test.dir/src/wifi_test.cpp.o: ../src/wifi_test.cpp
 CMakeFiles/wifi_test.dir/src/wifi_test.cpp.o: /opt/ros/groovy/include/XmlRpcDecl.h
 CMakeFiles/wifi_test.dir/src/wifi_test.cpp.o: /opt/ros/groovy/include/XmlRpcValue.h
 CMakeFiles/wifi_test.dir/src/wifi_test.cpp.o: /opt/ros/groovy/include/cv_bridge/cv_bridge.h
+CMakeFiles/wifi_test.dir/src/wifi_test.cpp.o: /opt/ros/groovy/include/geometry_msgs/Point.h
+CMakeFiles/wifi_test.dir/src/wifi_test.cpp.o: /opt/ros/groovy/include/geometry_msgs/Pose.h
+CMakeFiles/wifi_test.dir/src/wifi_test.cpp.o: /opt/ros/groovy/include/geometry_msgs/PoseWithCovariance.h
+CMakeFiles/wifi_test.dir/src/wifi_test.cpp.o: /opt/ros/groovy/include/geometry_msgs/PoseWithCovarianceStamped.h
+CMakeFiles/wifi_test.dir/src/wifi_test.cpp.o: /opt/ros/groovy/include/geometry_msgs/Quaternion.h
 CMakeFiles/wifi_test.dir/src/wifi_test.cpp.o: /opt/ros/groovy/include/opencv/cv.h
 CMakeFiles/wifi_test.dir/src/wifi_test.cpp.o: /opt/ros/groovy/include/opencv/highgui.h
 CMakeFiles/wifi_test.dir/src/wifi_test.cpp.o: /opt/ros/groovy/include/opencv2/calib3d/calib3d.hpp

@@ -5,8 +5,20 @@
 #include <opencv/cv.h>
 #include <opencv/highgui.h>
 #include <cv_bridge/cv_bridge.h>
+#include <geometry_msgs/PoseWithCovarianceStamped.h>
 
 double db = 0;
+uchar x = 0;
+uchar y = 0;
+void poseListen(const geometry_msgs::PoseWithCovarianceStamped::ConstPtr& msg) 
+{
+	x = msg -> pose.pose.position.x;
+	y = msg -> pose.pose.position.y;
+//	geometry_msgs/PoseWithCovarianceStamped Message
+	
+
+}
+
 void readerCallback(const wifi_lookup::WifiData::ConstPtr& msg) 
 {
 	
@@ -35,12 +47,7 @@ void readerCallback(const wifi_lookup::WifiData::ConstPtr& msg)
 
 
 }
-void poseListen(const wifi_lookup::WifiData::ConstPtr& msg) 
-{
-	
-	
 
-}
 
 int main(int argc, char **argv)
 {
@@ -48,29 +55,34 @@ int main(int argc, char **argv)
 	ros::NodeHandle n;
 
  	cv::namedWindow("Output");
- 	 cvResizeWindow("Output", 320, 240);
+ 	cvResizeWindow("Output", 320, 240);
   	cvStartWindowThread();
 
  	cv::Mat inputImage(cv::imread("maps/3ne-real-new.pgm"));
 	cv::Mat grayImage;
   	cv::cvtColor(inputImage, grayImage, CV_RGB2GRAY);
 
-//double x = 0;
-//double y = 0;
+
 
 	// Need AMCL Pose (convert from location to pixel)
+y = 240 - y;
+
 
 //grayImage.at<double>(x,y) = 3*db;
 
 
-    if (grayImage.channels() == 1){
+    if (grayImage.channels() == 1)
+{
     
-	grayImage.at<uchar>(20,10) = 255; //white
-	grayImage.at<uchar>(10,11) = 255;
-	grayImage.at<uchar>(10,12) = 150;
-	grayImage.at<uchar>(10,13) = 150;
-	grayImage.at<uchar>(10,14) = 0;
-	grayImage.at<uchar>(10,15) = 0; //black
+	grayImage.at<uchar>(x,y) = 0;
+
+
+	//grayImage.at<uchar>(20,10) = 255; //white
+	//grayImage.at<uchar>(10,11) = 255;
+	//grayImage.at<uchar>(10,12) = 150;
+	//grayImage.at<uchar>(10,13) = 150;
+	//grayImage.at<uchar>(10,14) = 0;
+	//grayImage.at<uchar>(10,15) = 0; //black
    }
 
 	cv::imshow("Output", grayImage);
@@ -80,6 +92,7 @@ int main(int argc, char **argv)
 
 	// AMCL POSE!!!!
 	//ros::Subscriber sub = n.subscribe<wifi_lookup::WifiData> ("wifi_data", 10, readerCallback);
+
 	ros::Subscriber sub2 = n.subscribe("amcl_pose", 2, poseListen);
 	ros::spin();
 

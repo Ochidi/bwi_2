@@ -8,6 +8,11 @@ CMakeFiles/wifi_test.dir/src/wifi_test.cpp.o
  /opt/ros/groovy/include/XmlRpcDecl.h
  /opt/ros/groovy/include/XmlRpcValue.h
  /opt/ros/groovy/include/cv_bridge/cv_bridge.h
+ /opt/ros/groovy/include/geometry_msgs/Point.h
+ /opt/ros/groovy/include/geometry_msgs/Pose.h
+ /opt/ros/groovy/include/geometry_msgs/PoseWithCovariance.h
+ /opt/ros/groovy/include/geometry_msgs/PoseWithCovarianceStamped.h
+ /opt/ros/groovy/include/geometry_msgs/Quaternion.h
  /opt/ros/groovy/include/opencv/cv.h
  /opt/ros/groovy/include/opencv/highgui.h
  /opt/ros/groovy/include/opencv2/calib3d/calib3d.hpp
