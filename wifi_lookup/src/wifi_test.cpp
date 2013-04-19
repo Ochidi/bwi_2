@@ -10,18 +10,16 @@
 double db = 0;
 uchar x = 0;
 uchar y = 0;
+
 void poseListen(const geometry_msgs::PoseWithCovarianceStamped::ConstPtr& msg) 
 {
 	x = msg -> pose.pose.position.x;
 	y = msg -> pose.pose.position.y;
-//	geometry_msgs/PoseWithCovarianceStamped Message
-	
-
+	//geometry_msgs/PoseWithCovarianceStamped Message
 }
 
 void readerCallback(const wifi_lookup::WifiData::ConstPtr& msg) 
 {
-	
 	unsigned int max = 0;
 
 	for(unsigned int i = 0; i < msg->length; i++) 
@@ -33,19 +31,16 @@ void readerCallback(const wifi_lookup::WifiData::ConstPtr& msg)
 			db = msg->HotSpots[max].dB;
 		}		
 	}
-	
 
 	if (msg-> length != 0)
 	{
-	ROS_INFO("Address of Strongest Hotspot: [%s]", msg->HotSpots[max].MAC.c_str());
-	ROS_INFO("Strength (dB): [%d]", msg->HotSpots[max].dB);
+		ROS_INFO("Address of Strongest Hotspot: [%s]", msg->HotSpots[max].MAC.c_str());
+		ROS_INFO("Strength (dB): [%d]", msg->HotSpots[max].dB);
 	}
 	else
 	{
-	ROS_INFO("WiFi not detected");
+		ROS_INFO("WiFi not detected");
 	}
-
-
 }
 
 
@@ -62,28 +57,24 @@ int main(int argc, char **argv)
 	cv::Mat grayImage;
   	cv::cvtColor(inputImage, grayImage, CV_RGB2GRAY);
 
-
-
 	// Need AMCL Pose (convert from location to pixel)
-y = 240 - y;
+	y = 240 - y;
 
-
-//grayImage.at<double>(x,y) = 3*db;
+	//grayImage.at<double>(x,y) = 3*db;
 
 
     if (grayImage.channels() == 1)
-{
-    
-	grayImage.at<uchar>(x,y) = 0;
+	{
+		grayImage.at<uchar>(x,y) = 0;
+		ROS_INFO("(%d,%d)", x,y);
 
-
-	//grayImage.at<uchar>(20,10) = 255; //white
-	//grayImage.at<uchar>(10,11) = 255;
-	//grayImage.at<uchar>(10,12) = 150;
-	//grayImage.at<uchar>(10,13) = 150;
-	//grayImage.at<uchar>(10,14) = 0;
-	//grayImage.at<uchar>(10,15) = 0; //black
-   }
+		//grayImage.at<uchar>(20,10) = 255; //white
+		//grayImage.at<uchar>(10,11) = 255;
+		//grayImage.at<uchar>(10,12) = 150;
+		//grayImage.at<uchar>(10,13) = 150;
+		//grayImage.at<uchar>(10,14) = 0;
+		//grayImage.at<uchar>(10,15) = 0; //black
+    }
 
 	cv::imshow("Output", grayImage);
 
