@@ -15,7 +15,7 @@ void poseListen(const geometry_msgs::PoseWithCovarianceStamped::ConstPtr& msg)
 {
 	x = msg -> pose.pose.position.x;
 	y = msg -> pose.pose.position.y;
-	ROS_INFO("(%d,%d)", x,y);
+	//geometry_msgs/PoseWithCovarianceStamped Message
 }
 
 void readerCallback(const wifi_lookup::WifiData::ConstPtr& msg) 

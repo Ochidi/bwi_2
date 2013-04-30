@@ -9,9 +9,9 @@ if os.path.exists(os.path.join('/opt/ros/groovy/share/catkin/cmake', 'catkinConf
     sys.path.insert(0, os.path.join('/opt/ros/groovy/share/catkin/cmake', '..', 'python'))
 from catkin.environment_cache import generate_environment_script
 
-code = generate_environment_script('/nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/build/devel/env.sh')
+code = generate_environment_script('/nishome/comenukor/ros/rosbuild_ws/bwi_2/wifi_lookup/build/devel/env.sh')
 
-output_filename = '/nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/build/catkin_generated/setup_cached.sh'
+output_filename = '/nishome/comenukor/ros/rosbuild_ws/bwi_2/wifi_lookup/build/catkin_generated/setup_cached.sh'
 with open(output_filename, 'w') as f:
     #print('Generate script for cached setup "%s"' % output_filename)
     f.write('\n'.join(code))

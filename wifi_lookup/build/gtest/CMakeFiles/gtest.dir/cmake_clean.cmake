@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/gtest.dir/src/gtest-all.cc.o"
-  "/nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/lib/libgtest.pdb"
-  "/nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/lib/libgtest.so"
+  "/nishome/comenukor/ros/rosbuild_ws/bwi_2/wifi_lookup/lib/libgtest.pdb"
+  "/nishome/comenukor/ros/rosbuild_ws/bwi_2/wifi_lookup/lib/libgtest.so"
 )
 
 # Per-language clean rules from dependency scanning.

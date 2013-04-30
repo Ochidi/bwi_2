@@ -52,15 +52,15 @@ ros/assert.h
 wifi_lookup/Wifi.h
 ../msg_gen/cpp/include/wifi_lookup/wifi_lookup/Wifi.h
 
-/nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/src/wifi_test.cpp
+/nishome/comenukor/ros/rosbuild_ws/bwi_2/wifi_lookup/src/wifi_test.cpp
 ros/ros.h
-/nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/src/ros/ros.h
+/nishome/comenukor/ros/rosbuild_ws/bwi_2/wifi_lookup/src/ros/ros.h
 std_msgs/String.h
-/nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/src/std_msgs/String.h
+/nishome/comenukor/ros/rosbuild_ws/bwi_2/wifi_lookup/src/std_msgs/String.h
 wifi_lookup/WifiData.h
-/nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/src/wifi_lookup/WifiData.h
+/nishome/comenukor/ros/rosbuild_ws/bwi_2/wifi_lookup/src/wifi_lookup/WifiData.h
 wifi_lookup/Wifi.h
-/nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/src/wifi_lookup/Wifi.h
+/nishome/comenukor/ros/rosbuild_ws/bwi_2/wifi_lookup/src/wifi_lookup/Wifi.h
 opencv/cv.h
 -
 opencv/highgui.h

@@ -4,7 +4,7 @@
 CMakeFiles/wifi_test.dir/src/wifi_test.cpp.o
  ../msg_gen/cpp/include/wifi_lookup/Wifi.h
  ../msg_gen/cpp/include/wifi_lookup/WifiData.h
- /nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/src/wifi_test.cpp
+ /nishome/comenukor/ros/rosbuild_ws/bwi_2/wifi_lookup/src/wifi_test.cpp
  /opt/ros/groovy/include/XmlRpcDecl.h
  /opt/ros/groovy/include/XmlRpcValue.h
  /opt/ros/groovy/include/cv_bridge/cv_bridge.h

@@ -3,5 +3,5 @@
 
 CATKIN_SHELL=zsh
 emulate sh # emulate POSIX
-. "/nishome/emaras/ros/rosbuild_ws/wifi_localization/wifi_lookup/build/devel/setup.sh"
+. "/nishome/comenukor/ros/rosbuild_ws/bwi_2/wifi_lookup/build/devel/setup.sh"
 emulate zsh # back to zsh mode
